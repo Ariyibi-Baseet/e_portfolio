@@ -1,0 +1,112 @@
+:root {
+  /* color scheme */
+  --black: #080808;
+  --gray: #1b1b1b;
+  --deep-green: #3f8e00;
+  --light-green: #62ba1b;
+  --text-color: #9c9c9c;
+
+  /* font */
+  --ff-ibm: "IBM Plex Mono", monospace;
+  --ff-raleway: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: var(--text-color);
+  font-family: var(--ff-ibm);
+  font-size: 18px;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.bi-twitter:hover {
+  color: #1da1f2;
+}
+
+.bi-behance:hover {
+  color: #1769ff;
+}
+
+.bi-linkedin:hover {
+  color: #0a66c2;
+}
+
+body {
+  background-color: var(--black);
+}
+
+nav {
+  width: 1110px;
+  height: 70px;
+  background-color: var(--gray);
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+header {
+  width: 1110px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 0;
+  /* gap: 100px; */
+}
+
+.content {
+  width: 50%;
+}
+
+.image {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image > img {
+  border-radius: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-family: var(--ff-raleway);
+  margin-bottom: 15px;
+}
+p {
+  color: var(--text-color);
+  font-family: var(--ff-ibm);
+  margin-bottom: 15px;
+}
+
+button {
+  width: 307px;
+  background-color: var(--deep-green);
+  color: #fff;
+  font-family: var(--ff-ibm);
+  font-weight: bold;
+  border: 2px solid var(--light-green);
+  padding: 24px 0;
+  border-radius: 8px;
+}
